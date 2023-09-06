@@ -27,7 +27,7 @@ Esta aplicación de gestión de tareas te permite organizar tus actividades diar
 
 * **Opción de Utilizar Ant Design:** Hemos integrado la opción de utilizar Ant Design para la interfaz de usuario, aunque puedes personalizar la interfaz según tus preferencias.
 
-## Ejecucion
+## Ejecución
 
 Instale npm v-9.6.7, node v18.17.1 y use el comando npm start para ejecutar el front por el puerto 3000.
 
@@ -40,7 +40,7 @@ Para la ejecución del backend, instale .net core 7 y ejecute el comando dotnet 
 ```bash
 dotnet run
 ```
-Si desea ejecutar el backend por otro puerto deberá cambiar el frontend en la ruta /Task-App/http-common.ts en la linea 4 el puerto por el lo va a utilizar.
+Si desea ejecutar el backend por otro puerto deberá cambiar el frontend en la ruta /front-task/http-common.ts en la linea 4 el puerto por el lo va a utilizar.
 
 ```TypeScript
 baseURL: "https://localhost:7246/api",
