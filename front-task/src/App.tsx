@@ -27,6 +27,9 @@ const App: React.FC = () => {
       case "3":
         console.log(e);
         return navigate("/Task");
+      case "4":
+        console.log(e);
+        return navigate("/");
     }
   };
 
@@ -71,6 +74,7 @@ const App: React.FC = () => {
           theme="dark"
           mode="horizontal"
         >
+          <Menu.Item key="3">Inicio</Menu.Item>
           {isAuthenticated && (
             <Menu.Item key="1">Iniciar Sesion</Menu.Item>
           )}
@@ -78,7 +82,7 @@ const App: React.FC = () => {
             <Menu.Item key="2">Registrarse</Menu.Item>
           )}
           {!isAuthenticated && (
-            <Menu.Item key="4">Tareas</Menu.Item>
+            <Menu.Item key="3">Tareas</Menu.Item>
           )}
           {!isAuthenticated && (
             <div key="5" style={{ color: 'white', marginLeft: 'auto' }}>Hola, {username}</div>
